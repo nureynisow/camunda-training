@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "14c71966-077d-4add-b446-68e64102e03e",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25340549"
+	},
+	"item": [
+		{
+			"name": "Create a process for dej",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pausedej",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pausedej"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pausedej",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pausedej"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pausedej/:businessKey",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pausedej",
+						":businessKey"
+					],
+					"variable": [
+						{
+							"key": "businessKey",
+							"value": "a12b9788-8f41-4aa3-96b7-71eae13e11b1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set lieu manger",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lieu\": \"resto\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/pausedej/:businessKey/lieu",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pausedej",
+						":businessKey",
+						"lieu"
+					],
+					"variable": [
+						{
+							"key": "businessKey",
+							"value": "a12b9788-8f41-4aa3-96b7-71eae13e11b1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "envoyer commande",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lieu\": \"resto\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/pausedej/:businessKey/lieu",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pausedej",
+						":businessKey",
+						"lieu"
+					],
+					"variable": [
+						{
+							"key": "businessKey",
+							"value": "a12b9788-8f41-4aa3-96b7-71eae13e11b1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/pausedej/:businessKey",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pausedej",
+						":businessKey"
+					],
+					"variable": [
+						{
+							"key": "businessKey",
+							"value": "a12b9788-8f41-4aa3-96b7-71eae13e11b1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

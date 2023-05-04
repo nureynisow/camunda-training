@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "592fd354-bb95-4d16-ae53-9140a9040d87",
+		"name": "Aller Manger REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25340549"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mangerId\": \"toto\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/aller-manger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aller-manger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "complete une tache",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"variables\": {\n        \"lieuRepas\": \"restau\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/aller-manger/:mangerId/:taskKey/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aller-manger",
+						":mangerId",
+						":taskKey",
+						"complete"
+					],
+					"variable": [
+						{
+							"key": "mangerId",
+							"value": null
+						},
+						{
+							"key": "taskKey",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/aller-manger/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"aller-manger",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
