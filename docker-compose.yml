@@ -11,18 +11,5 @@ services:
             MYSQL_DATABASE: camunda
             MYSQL_ROOT_PASSWORD: changeme
             
-    camunda:
-        image: camunda/camunda-bpm-platform:latest
-        ports:
-            - 8081:8080
-        environment:
-            DB_DRIVER: com.mysql.jdbc.Driver
-            DB_USERNAME: root
-            DB_PASSWORD: changeme
-            DB_URL: jdbc:mysql://mysql-camunda:3306/camunda
-            WAIT_FOR: mysql-camunda:3306
-            WAIT_FOR_TIMEOUT: 120
-        depends_on:
-            - mysql-camunda
 volumes:
     mysql-data:
